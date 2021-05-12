@@ -37,9 +37,9 @@ public class kullaniciGirisi extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        akademisyenGirisi_butonu = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        idariPersonelGirisi_butonu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("kullaniciGirisi");
@@ -51,8 +51,6 @@ public class kullaniciGirisi extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 51, 102));
         jPanel1.setForeground(new java.awt.Color(0, 0, 153));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\goalg\\Desktop\\1.jpg")); // NOI18N
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
@@ -128,11 +126,11 @@ public class kullaniciGirisi extends javax.swing.JFrame {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Akademisyen Girişi");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        akademisyenGirisi_butonu.setBackground(new java.awt.Color(255, 255, 255));
+        akademisyenGirisi_butonu.setText("Akademisyen Girişi");
+        akademisyenGirisi_butonu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                akademisyenGirisi_butonuActionPerformed(evt);
             }
         });
 
@@ -145,11 +143,11 @@ public class kullaniciGirisi extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("İdari Personel Girişi");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        idariPersonelGirisi_butonu.setBackground(new java.awt.Color(255, 255, 255));
+        idariPersonelGirisi_butonu.setText("İdari Personel Girişi");
+        idariPersonelGirisi_butonu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                idariPersonelGirisi_butonuActionPerformed(evt);
             }
         });
 
@@ -163,8 +161,8 @@ public class kullaniciGirisi extends javax.swing.JFrame {
                 .addGap(382, 382, 382)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(idariPersonelGirisi_butonu, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(akademisyenGirisi_butonu, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(388, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -174,9 +172,9 @@ public class kullaniciGirisi extends javax.swing.JFrame {
                 .addGap(89, 89, 89)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(akademisyenGirisi_butonu, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(idariPersonelGirisi_butonu, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -196,10 +194,10 @@ public class kullaniciGirisi extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void akademisyenGirisi_butonuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_akademisyenGirisi_butonuActionPerformed
         setVisible(false);
         new akademisyen().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_akademisyenGirisi_butonuActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         setVisible(false);
@@ -210,10 +208,10 @@ public class kullaniciGirisi extends javax.swing.JFrame {
        System.exit(0); 
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void idariPersonelGirisi_butonuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idariPersonelGirisi_butonuActionPerformed
         setVisible(false);
-        new idariPersonel().setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        new IdariPersonelGirisi().setVisible(true);//IdariPersonelGirisi sayfası açıldı
+    }//GEN-LAST:event_idariPersonelGirisi_butonuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -251,9 +249,9 @@ public class kullaniciGirisi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton akademisyenGirisi_butonu;
+    private javax.swing.JButton idariPersonelGirisi_butonu;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
