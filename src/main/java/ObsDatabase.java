@@ -9,6 +9,6 @@ public class ObsDatabase {
 
     public static final String host="localhost";
 
-    public static final int port=3306;
+    public static final int port=3306;  
 
 }
