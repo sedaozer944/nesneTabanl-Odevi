@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 public class IdariPersonelIslemleri {
     private Connection con=null;
-
+  
     private Statement statement=null;
     
     private PreparedStatement preparedStatement=null;
