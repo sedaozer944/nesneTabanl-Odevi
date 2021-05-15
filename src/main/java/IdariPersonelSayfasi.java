@@ -21,7 +21,7 @@ public class IdariPersonelSayfasi extends javax.swing.JFrame {
     IdariPersonelIslemleri idariPersonelIslemler=new IdariPersonelIslemleri();
     
             
-    public IdariPersonelSayfasi() {
+    public IdariPersonelSayfasi() {    
         initComponents();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         
