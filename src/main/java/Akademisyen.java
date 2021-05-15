@@ -16,7 +16,7 @@ public class Akademisyen {
         this.kisi_adi = kisi_adi;
         this.soyadi = soyadi;
         this.bolum_adi = bolum_adi;
-        this.fakulte_adi = fakulte_adi;
+        this.fakulte_adi = fakulte_adi;  
         this.e_posta = e_posta;
         this.kullanici_adi = kullanici_adi;
         this.parola = parola;
