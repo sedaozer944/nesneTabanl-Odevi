@@ -3,7 +3,7 @@ public class Akademisyen {
     private int id;
     private int ders_id;
     private String kisi_adi;
-    private String soyadi;   
+    private String soyadi;      
     private String bolum_adi;
     private String fakulte_adi;
     private String e_posta;  
