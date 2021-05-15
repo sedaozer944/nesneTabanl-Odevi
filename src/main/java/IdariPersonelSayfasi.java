@@ -36,6 +36,13 @@ public class IdariPersonelSayfasi extends javax.swing.JFrame {
         
         model=(DefaultTableModel) ogrenci_tablosu1.getModel();
         ogrenciGoruntule();
+        
+        anasayfabeyaz_paneli.setVisible(true);
+        ogrencigoruntule_paneli.setVisible(false);
+        ogrenciekleguncellesil_paneli.setVisible(false);
+        akademisyengoruntule_paneli.setVisible(false);
+        akademisyenguncellesil_paneli.setVisible(false);
+        akademisyenekle_paneli.setVisible(false);
     }
 
     /**
@@ -648,7 +655,7 @@ public class IdariPersonelSayfasi extends javax.swing.JFrame {
                         .addGroup(ogrenciekleguncellesil_paneliLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(ogrenciekleguncellesil_paneliLayout.createSequentialGroup()
                                 .addComponent(ogrenciokulno_alani, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 348, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(ogrenciguncelle_butonu, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(ogrenciekleguncellesil_paneliLayout.createSequentialGroup()
                                 .addComponent(ogrenciykspuani_alani, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -751,7 +758,7 @@ public class IdariPersonelSayfasi extends javax.swing.JFrame {
                         .addGap(18, 18, 18)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         anasayfabeyaz_panel.add(ogrenciekleguncellesil_paneli);
@@ -1388,15 +1395,15 @@ public class IdariPersonelSayfasi extends javax.swing.JFrame {
         ogrencisoyadi_alani.setText(model.getValueAt(selectedrow, 2).toString());
         ogrencibolumadi_alani.setText(model.getValueAt(selectedrow, 3).toString());
         ogrencifakulteadi_alani.setText(model.getValueAt(selectedrow, 4).toString());
-        ogrencicepno_alani.setText(model.getValueAt(selectedrow, 5).toString());
-        ogrencieposta_alani.setText(model.getValueAt(selectedrow, 6).toString());
-        fotograf_alani.setText(model.getValueAt(selectedrow, 7).toString());
-        ogrencikullaniciadi_alani.setText(model.getValueAt(selectedrow, 8).toString());
-        ogrenciparola_alani.setText(model.getValueAt(selectedrow, 9).toString());
-        ogrenciokulno_alani.setText(model.getValueAt(selectedrow, 10).toString());
-        ogrencitercihsirasi_alani.setText(model.getValueAt(selectedrow, 11).toString());
-        ogrenciykspuani_alani.setText(model.getValueAt(selectedrow, 12).toString());
-        ogrencikayittarihi_alani.setText(model.getValueAt(selectedrow, 13).toString());
+        ogrencicepno_alani.setText((String)model.getValueAt(selectedrow, 5));
+        ogrencieposta_alani.setText((String)model.getValueAt(selectedrow, 6));
+        fotograf_alani.setText((String)model.getValueAt(selectedrow, 7));
+        ogrencikullaniciadi_alani.setText((String)model.getValueAt(selectedrow, 8));
+        ogrenciparola_alani.setText((String)model.getValueAt(selectedrow, 9));
+        ogrenciokulno_alani.setText((String)model.getValueAt(selectedrow, 10));
+        ogrencitercihsirasi_alani.setText((String)model.getValueAt(selectedrow, 11));
+        ogrenciykspuani_alani.setText((String)model.getValueAt(selectedrow, 12));
+        ogrencikayittarihi_alani.setText((String)model.getValueAt(selectedrow, 13));
 
     }//GEN-LAST:event_ogrenci_tablosuMouseClicked
 

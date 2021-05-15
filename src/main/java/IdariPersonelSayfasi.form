@@ -654,7 +654,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="ogrenciokulno_alani" min="-2" pref="120" max="-2" attributes="0"/>
-                                      <EmptySpace pref="348" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="ogrenciguncelle_butonu" min="-2" pref="164" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
@@ -791,7 +791,7 @@
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jScrollPane3" min="-2" pref="355" max="-2" attributes="0"/>
-                      <EmptySpace pref="83" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
