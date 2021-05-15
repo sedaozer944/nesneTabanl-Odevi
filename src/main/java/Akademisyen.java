@@ -1,4 +1,4 @@
-
+  
 public class Akademisyen {
     private int id;
     private int ders_id;
