@@ -1264,8 +1264,7 @@ public class OBS extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel18MouseEntered
 
     private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
-        setVisible(false);
-        new Anketler().setVisible(true);
+        JOptionPane.showMessageDialog(null,"Size gönderilmiş değerlendirme formu bulunamadı.");
     }//GEN-LAST:event_jLabel18MouseClicked
 
     private void jLabel19MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseEntered
@@ -1274,7 +1273,7 @@ public class OBS extends javax.swing.JFrame {
 
     private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
         setVisible(false);
-        new Anketler().setVisible(true);
+        new Formİslemleri().setVisible(true);
     }//GEN-LAST:event_jLabel19MouseClicked
 
     private void jButton6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseEntered
@@ -1315,7 +1314,8 @@ public class OBS extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel20MouseEntered
 
     private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
-        JOptionPane.showMessageDialog(null,"YÖKSİS hakkında bilgi tanımlanmadı.");
+         setVisible(false);
+        new YOKSİSBilgileri().setVisible(true);
     }//GEN-LAST:event_jLabel20MouseClicked
 
     private void jPanel10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel10MouseExited
