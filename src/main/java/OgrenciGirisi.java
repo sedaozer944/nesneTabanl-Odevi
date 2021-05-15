@@ -1,11 +1,11 @@
 
 import javax.swing.JOptionPane;
 
-public class Giris extends javax.swing.JFrame {
+public class OgrenciGirisi extends javax.swing.JFrame {
 
     private Object kullaniciAdi;
     private Object parola;
-    public Giris() {
+    public OgrenciGirisi() {
         kullaniciAdi = "sidar";
         parola = "sidar";
         initComponents();
@@ -251,7 +251,7 @@ public class Giris extends javax.swing.JFrame {
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Giris().setVisible(true);
+                new OgrenciGirisi().setVisible(true);
             }
         });
     }

@@ -196,12 +196,12 @@ public class kullaniciGirisi extends javax.swing.JFrame {
 
     private void akademisyenGirisi_butonuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_akademisyenGirisi_butonuActionPerformed
         setVisible(false);
-        new akademisyen().setVisible(true);
+        //new akademisyen().setVisible(true);//AkademisyenSayfasını gösterecek düzelt
     }//GEN-LAST:event_akademisyenGirisi_butonuActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         setVisible(false);
-        new Giris().setVisible(true);
+        new OgrenciGirisi().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
  
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
