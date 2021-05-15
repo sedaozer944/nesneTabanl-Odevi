@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Acer
  */
-public class IdariPersonelSayfasi extends javax.swing.JFrame {
+public class IdariPersonelSayfasi extends javax.swing.JFrame {    
     
     DefaultTableModel model;
 
