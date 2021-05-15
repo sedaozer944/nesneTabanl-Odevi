@@ -21,9 +21,9 @@ public class IdariPersonelIslemleri {
 
     
     
-    public ArrayList<Akademisyenn> akademisyenleriGetir()
+    public ArrayList<Akademisyen> akademisyenleriGetir()
     {
-        ArrayList<Akademisyenn> cikti=new ArrayList<Akademisyenn>();
+        ArrayList<Akademisyen> cikti=new ArrayList<Akademisyen>();
         try {
             statement=con.createStatement();
             String sorgu="Select * From akademisyen";
@@ -42,7 +42,7 @@ public class IdariPersonelIslemleri {
                 String kullanici_adi=rs.getString("kullanici_adi");
                 String parola=rs.getString("parola");
                 
-                cikti.add(new Akademisyenn(id,ders_id,kisi_adi,soyadi,bolum_adi,e_posta,fakulte_adi,kullanici_adi,parola));
+                cikti.add(new Akademisyen(id,ders_id,kisi_adi,soyadi,bolum_adi,e_posta,fakulte_adi,kullanici_adi,parola));
             }
             return cikti;
             

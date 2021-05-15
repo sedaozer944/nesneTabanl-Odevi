@@ -1475,13 +1475,13 @@ public class IdariPersonelSayfasi extends javax.swing.JFrame {
     {
         model.setRowCount(0);
         
-        ArrayList<Akademisyenn> akademisyenler=new ArrayList<Akademisyenn>();
+        ArrayList<Akademisyen> akademisyenler=new ArrayList<Akademisyen>();
         
         akademisyenler=idariPersonelIslemler.akademisyenleriGetir();
         
         if(akademisyenler != null)
         {
-            for(Akademisyenn akademisyen : akademisyenler)
+            for(Akademisyen akademisyen : akademisyenler)
             {
                 Object[] eklenecek={akademisyen.getId(),akademisyen.getDers_id(),akademisyen.getKisi_adi(),akademisyen.getSoyadi(),akademisyen.getBolum_adi(),akademisyen.getFakulte_adi(),akademisyen.getE_posta(),akademisyen.getKullanici_adi(),akademisyen.getParola()};
             
