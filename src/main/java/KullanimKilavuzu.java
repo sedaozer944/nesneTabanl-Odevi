@@ -253,7 +253,7 @@ public class KullanimKilavuzu extends javax.swing.JFrame {
                 .addComponent(jButton7)
                 .addGap(206, 206, 206)
                 .addComponent(jLabel4)
-                .addContainerGap(254, Short.MAX_VALUE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
