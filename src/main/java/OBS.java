@@ -69,17 +69,17 @@ public class OBS extends javax.swing.JFrame {
         jPanel10 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
+        lblHazSinav = new javax.swing.JLabel();
+        lblHazirliNot = new javax.swing.JLabel();
+        lblHazDevamsizlik = new javax.swing.JLabel();
         jPanel12 = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        lblGelenMesajlar = new javax.swing.JLabel();
+        lblGonderilenMesajlar = new javax.swing.JLabel();
+        belgeTalebi = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
@@ -705,39 +705,63 @@ public class OBS extends javax.swing.JFrame {
             }
         });
 
-        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel21.setText("Haz. Sınav Takvimi");
+        lblHazSinav.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblHazSinav.setForeground(new java.awt.Color(255, 255, 255));
+        lblHazSinav.setText("Haz. Sınav Takvimi");
+        lblHazSinav.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblHazSinavMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblHazSinavMouseEntered(evt);
+            }
+        });
 
-        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel22.setText("Haz. Not Listesi");
+        lblHazirliNot.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblHazirliNot.setForeground(new java.awt.Color(255, 255, 255));
+        lblHazirliNot.setText("Haz. Not Listesi");
+        lblHazirliNot.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblHazirliNotMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblHazirliNotMouseEntered(evt);
+            }
+        });
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel23.setText("Haz. Devamsızlık Durumu");
+        lblHazDevamsizlik.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblHazDevamsizlik.setForeground(new java.awt.Color(255, 255, 255));
+        lblHazDevamsizlik.setText("Haz. Devamsızlık Durumu");
+        lblHazDevamsizlik.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblHazDevamsizlikMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblHazDevamsizlikMouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addContainerGap()
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel23))
+                    .addComponent(lblHazDevamsizlik)
+                    .addComponent(lblHazirliNot, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblHazSinav, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblHazSinav, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel22)
+                .addComponent(lblHazirliNot)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel23)
+                .addComponent(lblHazDevamsizlik)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -826,25 +850,41 @@ public class OBS extends javax.swing.JFrame {
             }
         });
 
-        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel27.setText("Gelen Mesajlar");
-        jLabel27.addMouseListener(new java.awt.event.MouseAdapter() {
+        lblGelenMesajlar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblGelenMesajlar.setForeground(new java.awt.Color(255, 255, 255));
+        lblGelenMesajlar.setText("Gelen Mesajlar");
+        lblGelenMesajlar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel27MouseClicked(evt);
+                lblGelenMesajlarMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel27MouseEntered(evt);
+                lblGelenMesajlarMouseEntered(evt);
             }
         });
 
-        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel28.setText("Gönderilen Mesajlar");
+        lblGonderilenMesajlar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblGonderilenMesajlar.setForeground(new java.awt.Color(255, 255, 255));
+        lblGonderilenMesajlar.setText("Gönderilen Mesajlar");
+        lblGonderilenMesajlar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblGonderilenMesajlarMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lblGonderilenMesajlarMouseEntered(evt);
+            }
+        });
 
-        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel29.setText("Belge Talebi");
+        belgeTalebi.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        belgeTalebi.setForeground(new java.awt.Color(255, 255, 255));
+        belgeTalebi.setText("Belge Talebi");
+        belgeTalebi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                belgeTalebiMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                belgeTalebiMouseEntered(evt);
+            }
+        });
 
         jLabel30.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(204, 204, 204));
@@ -857,9 +897,9 @@ public class OBS extends javax.swing.JFrame {
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel28)
-                    .addComponent(jLabel29)
+                    .addComponent(lblGelenMesajlar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblGonderilenMesajlar)
+                    .addComponent(belgeTalebi)
                     .addComponent(jLabel30))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -867,11 +907,11 @@ public class OBS extends javax.swing.JFrame {
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel27)
+                .addComponent(lblGelenMesajlar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel28)
+                .addComponent(lblGonderilenMesajlar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel29)
+                .addComponent(belgeTalebi)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel30)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1123,6 +1163,7 @@ public class OBS extends javax.swing.JFrame {
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1131,15 +1172,14 @@ public class OBS extends javax.swing.JFrame {
                                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                                 .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                .addComponent(jPanel11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 5, Short.MAX_VALUE)
-                                .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 5, Short.MAX_VALUE)
-                                .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 5, Short.MAX_VALUE)))
-                        .addContainerGap(32, Short.MAX_VALUE))))
+                                .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 5, Short.MAX_VALUE)
+                                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(15, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1152,21 +1192,21 @@ public class OBS extends javax.swing.JFrame {
                     .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(68, 68, 68)
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(84, 84, 84))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1499,14 +1539,14 @@ public class OBS extends javax.swing.JFrame {
         jPanel12.setSize(165,100);
     }//GEN-LAST:event_jLabel26MouseEntered
 
-    private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
+    private void lblGelenMesajlarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGelenMesajlarMouseClicked
         setVisible(false);
         new gelenMesajlar().setVisible(true);
-    }//GEN-LAST:event_jLabel27MouseClicked
+    }//GEN-LAST:event_lblGelenMesajlarMouseClicked
 
-    private void jLabel27MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseEntered
+    private void lblGelenMesajlarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGelenMesajlarMouseEntered
         jPanel13.setSize(150,115);
-    }//GEN-LAST:event_jLabel27MouseEntered
+    }//GEN-LAST:event_lblGelenMesajlarMouseEntered
 
     private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
         setVisible(false);
@@ -1607,6 +1647,51 @@ public class OBS extends javax.swing.JFrame {
                    jPanel14.setSize(160,300); // TODO add your handling code here:
     }//GEN-LAST:event_jLabel44MouseEntered
 
+    private void lblGonderilenMesajlarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGonderilenMesajlarMouseClicked
+        setVisible(false);
+        new gonderilenMesajlar().setVisible(true);
+    }//GEN-LAST:event_lblGonderilenMesajlarMouseClicked
+
+    private void lblGonderilenMesajlarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblGonderilenMesajlarMouseEntered
+         jPanel13.setSize(150,115);
+    }//GEN-LAST:event_lblGonderilenMesajlarMouseEntered
+
+    private void belgeTalebiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_belgeTalebiMouseClicked
+       //setVisible(false);
+        //new belgeTalebi().setVisible(true);
+    }//GEN-LAST:event_belgeTalebiMouseClicked
+
+    private void belgeTalebiMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_belgeTalebiMouseEntered
+         //jPanel13.setSize(150,115);
+    }//GEN-LAST:event_belgeTalebiMouseEntered
+
+    private void lblHazirliNotMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHazirliNotMouseClicked
+        setVisible(false);
+        new hazirlikNotListesi().setVisible(true);
+    }//GEN-LAST:event_lblHazirliNotMouseClicked
+
+    private void lblHazirliNotMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHazirliNotMouseEntered
+        jPanel11.setSize(150,115);
+    }//GEN-LAST:event_lblHazirliNotMouseEntered
+
+    private void lblHazSinavMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHazSinavMouseClicked
+         setVisible(false);
+        new hazirlikSinavTakvimi().setVisible(true);
+    }//GEN-LAST:event_lblHazSinavMouseClicked
+
+    private void lblHazSinavMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHazSinavMouseEntered
+        jPanel11.setSize(150,115);
+    }//GEN-LAST:event_lblHazSinavMouseEntered
+
+    private void lblHazDevamsizlikMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHazDevamsizlikMouseClicked
+        setVisible(false);
+        new hazirlikDevamsizlikDurumu().setVisible(true);
+    }//GEN-LAST:event_lblHazDevamsizlikMouseClicked
+
+    private void lblHazDevamsizlikMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblHazDevamsizlikMouseEntered
+        jPanel11.setSize(150,115);
+    }//GEN-LAST:event_lblHazDevamsizlikMouseEntered
+
     
     public static void main(String args[]) {
        
@@ -1618,6 +1703,7 @@ public class OBS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel belgeTalebi;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -1639,15 +1725,9 @@ public class OBS extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -1685,5 +1765,10 @@ public class OBS extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JLabel lblGelenMesajlar;
+    private javax.swing.JLabel lblGonderilenMesajlar;
+    private javax.swing.JLabel lblHazDevamsizlik;
+    private javax.swing.JLabel lblHazSinav;
+    private javax.swing.JLabel lblHazirliNot;
     // End of variables declaration//GEN-END:variables
 }
